@@ -143,7 +143,9 @@ if(test_independance_deux_var_quant(my_data2$Marseille, my_data2$Aix)<=2.468) {
 
 # Nous obtenons H0
 
-# Je ne sais pas interpreter ces résultats.
+# Observation normale, car le test est plus précis, donc engloble plus de valeurs. Avec une précision de 98%,
+# la valeur obtenue par le test est inclu dans la courbe en cloche, alors qu'elle ne l'était pas avec 
+# un test de niveau de signification d'alpha 0.05.
 
 ####### EXERCICE 7 : 
 
@@ -223,19 +225,30 @@ print(fonction_khi_deux_matrice(nrow(form), ncol(form), form, val_theo_form))
 
 ########## Exercice 9 : 
 
-#Les tests paramétriques se basent sur des distributions statistiques supposées dans les données. 
-#Par conséquent, certaines conditions de validité doivent être vérifiées pour que le résultat d’un test paramétrique
-#soit fiable. 
+# Les tests paramétriques se basent sur des distributions statistiques supposées dans les données. 
+# Par conséquent, certaines conditions de validité doivent être vérifiées pour que le résultat du test soit fiable.
 
-#D'après les questions précedentes, le test t de Student pour échantillons indépendants n’est fiable que si les
-#données associées à chaque échantillon suivent une distribution normale et si les variances des échantillons sont homogènes.
-#C'est pour cela qu'il est paramétrique.
+# D'après les questions précedentes, le test t de Student pour échantillons indépendants n’est fiable que si les
+# données associées à chaque échantillon suivent une distribution normale et si les variances des échantillons sont homogènes.
+# C'est pour cela qu'il est paramétrique.
 
-#Les tests non-paramétriques ne se basent pas sur des distributions statistiques.
-#Ils peuvent donc être utilisés même si les conditions de validité des tests paramétriques ne sont pas vérifiées.
-#Il me semble qu'un test paramétrique est comme son nom l'indique basé sur l'estimation de paramètres des échantillons
-#, or le test du Chi2 est une comparaison de proportions d'échantillons indépendants et des proportions (pourcentages...) 
-#ne sont pas des paramètres à proprement parler
-#C'est pour cela qu'il est non-paramétrique.
+# Les tests non-paramétriques ne se basent pas sur des distributions statistiques mais sur l'estimation de paramètre des
+# échantillons. Ils peuvent donc être utilisés même si les conditions de validité des tests paramétriques ne sont pas vérifiées.
+# Le test du Khi-DEux est une comparaison de proportions d'échantillons indépendants. Or les proportions ne sont pas des paramètres.
+# Ainsi, le test du Khi-Deux est non paramètrique.
+
+# En résumé, l'un (Student) compare 2 positions alors que l'autre compare des proportions.
 
 ########## Exercice 10 :
+
+# Les données qualitatives sont des données auxquelles on ne peut pas attribuer une valeur ou une caractéristique.
+# Quelques exemples :  La couleur, la texture, le goût, l'odeur, l'état et la ductilité.
+
+# Le coefficient de corrélation de Pearson permet d'analyser les relations linéaires alors que
+# le coefficient de corrélation de Spearman regarde les relations non-linéaires monotones. 
+
+# Ce sont des méthodes de corrélation, ce qui permet de savoir s’il existe un lien entre deux variables quantitatives,
+# si les valeurs des deux variables varient dans le même sens ou dans le sens contraire.
+
+#Entre une variable de type quantitative en lien avec une variable de type quantitative
+#On ne peut donc pas les utiliser sur des données qualitatives.
