@@ -55,3 +55,4 @@ plot(projection[,1], projection[,2], main="Nuage de Point",
 
 ##### EXERCICE 8 : Interprétez les résultats obtenus
 
+
