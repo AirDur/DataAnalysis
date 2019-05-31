@@ -1,4 +1,4 @@
-# TP 3 d'Analyse de Donnée - Romain Duret & Thomas Gattaz
+# TP 3 d'Analyse de Donnée - Romain Duret
 
 ###### EXERCICE 1 : Générer des points du plan (m points), sous la forme d'un tableau ou d'une matrice
 ###### (matrice à m lignes et 2 colonnes). Les classes pourront être representés par des valeurs binaires
